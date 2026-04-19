@@ -1,4 +1,13 @@
-var img;
+var banana;
+var cherry;
+var grape;
+var kiwi;
+var apple;
+var pear;
+var lemon;
+var orange;
+var peach;
+var watermelon;
 var initials ='jm'; // your initials
 var choice = '1'; // starting choice, so it is not empty
 var screenbg = 250; // off white background
@@ -8,7 +17,16 @@ function preload() {
 // preload() runs once, it may make you wait
 //  img = loadImage('cat.jpg');  // cat.jpg needs to be next to this .js file
 // you can link to an image on your github account
-  img = loadImage('https://dma-git.github.io/images/74.png');
+  banana = loadImage('https://codemachinima.github.io/photoshop/Banana.png');
+  cherry = loadImage('https://codemachinima.github.io/photoshop/Cherry.png');
+  grape = loadImage('https://codemachinima.github.io/photoshop/Grape.png');
+  kiwi = loadImage('https://codemachinima.github.io/photoshop/Kiwi.png');
+  apple = loadImage('https://codemachinima.github.io/photoshop/Apple.png');
+  pear = loadImage('https://codemachinima.github.io/photoshop/Pear.png');
+  lemon = loadImage('https://codemachinima.github.io/photoshop/Lemon.png');
+  orange = loadImage('https://codemachinima.github.io/photoshop/Orange.png');
+  peach = loadImage('https://codemachinima.github.io/photoshop/Peach.svg');
+  watermelon = loadImage('https://codemachinima.github.io/photoshop/Watermelon.png');
 }
 
 function setup() {
@@ -79,7 +97,7 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
     fill(random(255), random(255), random(255), random(255));
     rect(mouseX, mouseY, 200, 150);
   } else if (toolChoice == 'g' || toolChoice == 'G') { // g places the image we pre-loaded
-    image(img, mouseX, mouseY, 50, 50);
+    image(orange, mouseX, mouseY, 50, 50);
     
   }
  }
