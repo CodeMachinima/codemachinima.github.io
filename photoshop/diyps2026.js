@@ -52,52 +52,38 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
 
  if (toolChoice == '1' ) {  // first tool
    
-    strokeWeight(01);
-    line(mouseX, mouseY, pmouseX, pmouseY);
+    image(banana, mouseX-20, mouseY-20, 50, 50);
     
   } else if (toolChoice == '2') { // second tool
 
-    strokeWeight(20);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-    strokeWeight(1);
+    image(cherry, mouseX-20, mouseY-20, 50, 50);
   } else if (toolChoice == '3') { // third tool
 
-    stroke(300, 100, 0, 80);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-    stroke('black')
+    image(grape, mouseX-20, mouseY-20, 50, 50);
   } else if (toolChoice == '4') {
 
-    stroke(0, 0, 255);
-    line(mouseX, mouseY, pmouseX, pmouseY);
+    image(kiwi, mouseX-20, mouseY-20, 50, 50);
   } else if (key == '5') { // this tool calls a function
-    stroke(0, 0, 255);
-    testbox(20, 20, 200);
-    testbox(200, 20, 20);
+    image(apple, mouseX-20, mouseY-20, 50, 50);
     
  // make testbox do something!
  //   line(mouseX, mouseY, pmouseX, pmouseY);
   } else if (toolChoice == '6') {
 
-    stroke(200);
-    line(mouseX, mouseY, pmouseX, pmouseY);
+    image(pear, mouseX-20, mouseY-20, 50, 50);
   } else if (toolChoice == '7') {
 
-    fill(100, 200, 100);
-    rect(mouseX, mouseY, 20, 20);
+    image(lemon, mouseX-20, mouseY-20, 50, 50);
   } else if (toolChoice == '8') {
 
-    fill(300, 100, 0, 80);
-    rect(mouseX, mouseY, 20, 20);
+    image(orange, mouseX-20, mouseY-20, 50, 50);
   } else if (toolChoice == '9') {
 
-    fill(300, 100, 0, 80);
-    rect(mouseX, mouseY, 40, 40);
+    image(peach, mouseX-20, mouseY-20, 50, 50);
   } else if (toolChoice == '0') {
-    stroke(0, 0);
-    fill(random(255), random(255), random(255), random(255));
-    rect(mouseX, mouseY, 200, 150);
+    image(watermelon, mouseX-20, mouseY-20, 50, 50);
   } else if (toolChoice == 'g' || toolChoice == 'G') { // g places the image we pre-loaded
-    image(orange, mouseX, mouseY, 50, 50);
+    image(orange, mouseX-20, mouseY-20, 50, 50);
     
   }
  }
