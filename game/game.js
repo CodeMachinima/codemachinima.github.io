@@ -1,19 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Game</title>
-</head>
-<body>
-
-<h1>Rhythm Game</h1>
-<p>ft. Panic! At the Disco</p>
-<p>Use "f" to control the left circles and "j" to control the right circles</p>
-<iframe src="game/index.html" height="600" width="600" title="game"></iframe>
-<p>
-<h3>P5.js code</h3>
-</p>
-<p>
-<pre>
 var notes = [];
 var lanes = ['a', 'f', 'j', ';'];
 var laneX = {};
@@ -26,7 +10,7 @@ var startTime;
 var noteChart = [];
 
 function preload() {
-  song = loadSound('https://codemachinima.github.io/game/alt/data/patd.mp3');
+  song = loadSound('https://codemachinima.github.io/game/data/patd.mp3');
 }
 
 function setup() {
@@ -36,8 +20,8 @@ function setup() {
     laneX[lanes[i]] = 150 + i * 80;
   }
 
-noteChart = [
-{ time: -700, lane: 'f' }, 
+  noteChart = [
+    { time: -700, lane: 'f' }, 
 { time: -689, lane: 'j' }, 
 { time: 34, lane: 'f' }, 
 { time: 167, lane: 'j' }, 
@@ -1102,7 +1086,3 @@ function Note(lane) {
     ellipse(this.x, this.y, 30);
   };
 }
-</pre>
-</p>
-</body>
-</html> 
