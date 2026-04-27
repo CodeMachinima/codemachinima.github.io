@@ -10,7 +10,7 @@ var startTime;
 var noteChart = [];
 
 function preload() {
-  song = loadSound('https://codemachinima.github.io/game/data/patd.mp3');
+  song = loadSound('https://codemachinima.github.io/game/alt/data/patd.mp3');
 }
 
 function setup() {
